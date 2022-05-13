@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css2?family=Anton&family=Raleway:ital,wght@0,100;
+
+0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap);/**** Reset ****/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/**** Utility classes ****/
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.centering-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.primary {
+  color: #7bb7be;
+}
+
+.secondary {
+  color: #FBC79F;
+}
+
+.text-light {
+  color: #f5f5f5;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.text-secondary {
+  color: #FBC79F;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+/**** Utility classes ****/
+
+body {
+  font-weight: 200;
+  background-color: #3e3e3e;
+  font-family: "Raleway", sans-serif;
+}
+
+body header {
+  color: #FBC79F;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #7bb7be;
+  padding: 0 2rem;
+  line-height: 8vh;
+  height: 8vh;
+}
+
+body main {
+  min-height: 92vh;
+}
+
+body main section#trains {
+  padding: 3rem 0;
+}
+
+body main section#trains div.train {
+  padding: 2rem;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  box-shadow: 1px 1px 3px #7bb7be;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+body main section#trains div.train div.cell {
+  width: 15%;
+}
+

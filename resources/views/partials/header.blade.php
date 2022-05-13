@@ -1,3 +1,3 @@
 <header>
-	<h6>Header</h6>
+	<h2>Trains schedule</h2>
 </header>
