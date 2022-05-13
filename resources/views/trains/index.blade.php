@@ -4,4 +4,5 @@
 
 @section('content')
 	<h1>Trains index</h1>
+	@dump($trains);
 @endsection
