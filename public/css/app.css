@@ -22,15 +22,11 @@
 }
 
 .primary {
-  color: #7bb7be;
+  color: #5f9ea6;
 }
 
 .secondary {
   color: #FBC79F;
-}
-
-.text-light {
-  color: #f5f5f5;
 }
 
 .italic {
@@ -49,11 +45,15 @@
   text-align: center;
 }
 
+.txt-smaller {
+  font-size: 80%;
+}
+
 /**** Utility classes ****/
 
 body {
   font-weight: 200;
-  background-color: #3e3e3e;
+  background-color: #FBC79F;
   font-family: "Raleway", sans-serif;
 }
 
@@ -61,7 +61,7 @@ body header {
   color: #FBC79F;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: #7bb7be;
+  background-color: #5f9ea6;
   padding: 0 2rem;
   line-height: 8vh;
   height: 8vh;
@@ -79,11 +79,19 @@ body main section#trains div.train {
   padding: 2rem;
   border-radius: 30px;
   margin-bottom: 1rem;
-  box-shadow: 1px 1px 3px #7bb7be;
+  background-color: white;
+  box-shadow: 1px 1px 3px #959595;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
+}
+
+body main section#trains div.train h4,
+body main section#trains div.train h5,
+body main section#trains div.train h6,
+body main section#trains div.train p {
+  margin-bottom: 0.3rem;
 }
 
 body main section#trains div.train div.cell {

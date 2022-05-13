@@ -28,10 +28,6 @@
 	color: $secondaryColor;
 }
 
-.text-light {
-	color: $fontColorLighter;
-}
-
 .italic {
 	font-style: italic;
 }
@@ -48,12 +44,16 @@
 	text-align: center;
 }
 
+.txt-smaller {
+	font-size: 80%;
+}
+
 /**** Utility classes ****/
 
 
 body {
 	font-weight: 200;
-	background-color: #3e3e3e;
+	background-color: $secondaryColor;
 	font-family: 'Raleway', sans-serif;
 	header {
 		color: $secondaryColor;
@@ -73,8 +73,15 @@ body {
 				padding: 2rem;
 				border-radius: 30px;
 				margin-bottom: 1rem;
-				box-shadow: 1px 1px 3px $primaryColor;
-				@include flex( space-between, center, 1rem );
+				background-color: white;
+				box-shadow: 1px 1px 3px #959595;
+				@include flex( space-between, flex-start, 1rem );
+				h4,
+				h5,
+				h6,
+				p {
+					margin-bottom: 0.3rem;
+				}
 				div.cell {
 					width: 15%;
 				}
