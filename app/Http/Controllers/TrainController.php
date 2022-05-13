@@ -8,7 +8,9 @@ use Illuminate\Http\Request;
 class TrainController extends Controller
 {
     public function index() {
-        $trains = Train::all()->sortBy('departure_date');
+        $trains = Train::where( 'departure_date', '>=', date('y-m-d') )
+        ->orderBy('departure_date', 'asc')
+        ->get();
         return view('trains.index', compact('trains'));
     }
 }
