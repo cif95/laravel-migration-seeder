@@ -70,7 +70,7 @@ body {
 		section#trains {
 			padding: 3rem 0;
 			div.train {
-				padding: 2rem;
+				padding: 2rem 5rem;
 				border-radius: 30px;
 				margin-bottom: 1rem;
 				background-color: white;
@@ -83,7 +83,23 @@ body {
 					margin-bottom: 0.3rem;
 				}
 				div.cell {
-					width: 15%;
+					width: 20%;
+				}
+				div.departure {
+					position: relative;
+					&::after {
+						content: '';
+						height: 10px;
+						width: 100px;
+						color: black;
+						display: block;
+						border-bottom: 1px solid $borderColor; 
+						@include position(absolute, inherit, inherit, 50%, 100%);
+					}
+				}
+				div.info {
+					padding-left: 2rem;
+					border-left: 1px solid $borderColor;
 				}
 			}
 		}

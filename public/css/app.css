@@ -76,7 +76,7 @@ body main section#trains {
 }
 
 body main section#trains div.train {
-  padding: 2rem;
+  padding: 2rem 5rem;
   border-radius: 30px;
   margin-bottom: 1rem;
   background-color: white;
@@ -95,6 +95,29 @@ body main section#trains div.train p {
 }
 
 body main section#trains div.train div.cell {
-  width: 15%;
+  width: 20%;
+}
+
+body main section#trains div.train div.departure {
+  position: relative;
+}
+
+body main section#trains div.train div.departure::after {
+  content: "";
+  height: 10px;
+  width: 100px;
+  color: black;
+  display: block;
+  border-bottom: 1px solid rgb(36, 118, 156);
+  position: absolute;
+  top: inherit;
+  right: inherit;
+  bottom: 50%;
+  left: 100%;
+}
+
+body main section#trains div.train div.info {
+  padding-left: 2rem;
+  border-left: 1px solid rgb(36, 118, 156);
 }
 

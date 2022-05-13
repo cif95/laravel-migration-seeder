@@ -8,16 +8,19 @@
 			@foreach ($trains as $train)
 				<div class="train bold">
 					<div class="departure cell">
-						<h4 class="text-secondary">{{ $train->departure_date }} </h4>
+						<h5>Departure</h5>
+						<h4 class="text-secondary">
+							{{ date('d-m-Y', strtotime($train->departure_date)) }} 
+						</h4>
 						<h6 class="italic">{{ $train->company }}</h6>
 						<p>{{ $train->departure_station }}</p>
 						<p class="text-secondary">
-							{{ $train->departure_time }}
+								{{ date('H:i', strtotime($train->departure_time)) }}
 						</p> 
 					</div>
 					<div class="arrival cell">
 						<h5>Arrival</h5>
-						<p>{{ $train->arrival_station }} {{ $train->arrival_time }}</p>
+						<p>{{ $train->arrival_station }} {{ date('H:i', strtotime($train->arrival_time)) }}</p>
 					</div>
 					<div class="info cell txt-smaller">
 						<p>Train n.{{ $train->train_code }}</p>
