@@ -17,23 +17,23 @@
 						</h6>
 						<p>Station: {{ $train->departure_station }}</p>
 						<p class="text-secondary">
-							Date: 
+							Time: 
 							{{ date('H:i', strtotime($train->departure_time)) }}
 						</p> 
 					</div>
 					<div class="arrival cell">
+						<h5>Arrival</h5>
 						<div>
-							<h5>Arrival</h5>
 							<p>Station: {{ $train->arrival_station }}</p>
+							<p class="text-secondary">
+								Time: {{ date('H:i', strtotime($train->arrival_time)) }}
+							</p>
 						</div>
-						<p class="text-secondary">
-							Time: {{ date('H:i', strtotime($train->arrival_time)) }}
-						</p>
 					</div>
 					<div class="info cell txt-smaller">
 						<h5>Train n.{{ $train->train_code }}</h5>
 						<p>{{ $train->wagons }} wagons</p>
-						<a class="btn secondary" href="{{ route('trains-detail', $id = $train->id) }}">Info</a>
+						<a class="btn secondary" href="{{ route('train-detail', $slug = $train->slug) }}">Info</a>
 					</div>				
 				</div>
 			@endforeach

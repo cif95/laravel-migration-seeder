@@ -12,8 +12,8 @@ class TrainController extends Controller
         return view('trains.index', compact('trains'));
     }
 
-    public function show($id) {
-        $train = Train::findOrFail($id);
+    public function show($slug) {
+        $train = Train::where('slug', $slug)->first();
         return view('trains.show', compact('train'));
     }
 

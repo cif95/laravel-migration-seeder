@@ -158,9 +158,6 @@ body main div#pagination nav ul {
   align-items: center;
   gap: 2rem;
 }
-body main div#pagination nav ul li {
-  height: 20px;
-}
 body main div#pagination nav ul li.active {
   color: #FBC79F;
 }

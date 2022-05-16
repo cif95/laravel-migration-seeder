@@ -148,7 +148,6 @@ body {
 				background-color: white;
 				@include flex (center, center, 2rem);
 				li {
-					height: 20px;
 					&.active {
 						color: $secondaryColor;
 					}

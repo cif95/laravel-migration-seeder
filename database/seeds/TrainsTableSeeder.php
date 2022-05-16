@@ -25,6 +25,7 @@ class TrainsTableSeeder extends Seeder
             $newTrain->wagons = $faker->numberBetween(2, 10);
             $newTrain->is_onScheduled = $faker->boolean();
             $newTrain->is_cancelled = $faker->boolean();
+            $newTrain->slug= $faker->slug(3, false);
             $newTrain->save();
         }
     }
