@@ -83,7 +83,6 @@ body {
 				border-radius: 30px;
 				margin-bottom: 1rem;
 				background-color: white;
-				box-shadow: 1px 1px 3px #959595;
 				@include flex( space-between, flex-start, 1rem );
 				h4,
 				h5,
@@ -119,8 +118,19 @@ body {
 				border-radius: 15px;
 				background-color: white;
 				@include flex (center, center, 2rem);
+				li {
+					height: 20px;
+					&.active {
+						color: $secondaryColor;
+					}
+				}
 			}
-			
 		}
 	}
+}
+
+header,
+div.train,
+div#pagination nav ul {
+	box-shadow: 1px 1px 3px #959595;
 }

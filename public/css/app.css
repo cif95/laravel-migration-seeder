@@ -81,7 +81,6 @@ body main section#trains div.train {
   border-radius: 30px;
   margin-bottom: 1rem;
   background-color: white;
-  box-shadow: 1px 1px 3px #959595;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -125,4 +124,16 @@ body main div#pagination nav ul {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+body main div#pagination nav ul li {
+  height: 20px;
+}
+body main div#pagination nav ul li.active {
+  color: #FBC79F;
+}
+
+header,
+div.train,
+div#pagination nav ul {
+  box-shadow: 1px 1px 3px #959595;
 }
