@@ -8,21 +8,7 @@ use Illuminate\Http\Request;
 class TrainController extends Controller
 {
     public function index() {
-        $trains = Train::where( 'departure_date', '>=', date('y-m-d') )
-        ->orderBy('departure_date', 'asc')
-        ->get();
-        $this->createNewTrain(
-            '2022-05-17',
-            'Italo',
-            'Bari Centrale',
-            'Bologna',
-            '16:00:00',
-            '23:00:00',
-            '15426',
-            6,
-            true,
-            false
-        );
+        $trains = Train::all();
         return view('trains.index', compact('trains'));
     }
 

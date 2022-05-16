@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Anton&family=Raleway:ital,wght@0,100;
-
-0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap);/**** Reset ****/
+@import url(https://fonts.googleapis.com/css2?family=Anton&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap);/**** Reset ****/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +6,6 @@
 }
 
 /**** Utility classes ****/
-
 .container {
   margin: 0 auto;
   max-width: 800px;
@@ -46,17 +43,15 @@
 }
 
 .txt-smaller {
-  font-size: 80%;
+  font-size: 90%;
 }
 
 /**** Utility classes ****/
-
 body {
   font-weight: 200;
   background-color: #FBC79F;
   font-family: "Raleway", sans-serif;
 }
-
 body header {
   color: #FBC79F;
   border-bottom-left-radius: 10px;
@@ -66,15 +61,12 @@ body header {
   line-height: 8vh;
   height: 8vh;
 }
-
 body main {
   min-height: 92vh;
 }
-
 body main section#trains {
   padding: 3rem 0;
 }
-
 body main section#trains div.train {
   padding: 2rem 5rem;
   border-radius: 30px;
@@ -86,22 +78,18 @@ body main section#trains div.train {
   align-items: flex-start;
   gap: 1rem;
 }
-
 body main section#trains div.train h4,
 body main section#trains div.train h5,
 body main section#trains div.train h6,
 body main section#trains div.train p {
   margin-bottom: 0.3rem;
 }
-
 body main section#trains div.train div.cell {
   width: 20%;
 }
-
 body main section#trains div.train div.departure {
   position: relative;
 }
-
 body main section#trains div.train div.departure::after {
   content: "";
   height: 10px;
@@ -115,9 +103,7 @@ body main section#trains div.train div.departure::after {
   bottom: 50%;
   left: 100%;
 }
-
 body main section#trains div.train div.info {
   padding-left: 2rem;
   border-left: 1px solid rgb(36, 118, 156);
 }
-
