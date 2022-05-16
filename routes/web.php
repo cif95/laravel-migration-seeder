@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'TrainController@index')->name('trains');
+Route::get('/{id}', 'TrainController@show')->name('trains-detail');

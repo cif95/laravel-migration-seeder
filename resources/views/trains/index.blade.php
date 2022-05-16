@@ -27,9 +27,13 @@
 						<p>{{ $train->wagons }} wagons</p>
 						<p>{{ ($train->is_onScheduled) ? 'On time' : 'Delay'}}</p>
 						<p class="text-secondary">{{ ($train->is_cancelled) ? 'Cancelled' : 'Confirmed'}}</p>
+						<a href="{{ route('trains-detail', $id = $train->id) }}">View More</a>
 					</div>				
 				</div>
 			@endforeach
+			<div id="pagination">
+				{{ $trains->links() }}
+			</div>
 		</div>
 	</section>
 @endsection

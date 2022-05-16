@@ -8,8 +8,13 @@ use Illuminate\Http\Request;
 class TrainController extends Controller
 {
     public function index() {
-        $trains = Train::all();
+        $trains = Train::orderBy('departure_date', 'asc')->paginate(5);
         return view('trains.index', compact('trains'));
+    }
+
+    public function show($id) {
+        $train = Train::findOrFail($id);
+        return view('trains.show', compact('train'));
     }
 
 
