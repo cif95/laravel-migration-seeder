@@ -27,6 +27,24 @@ ul {
   gap: 0;
 }
 
+.btn {
+  background-color: #FBC79F;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 18px;
+}
+
+.btn.primary {
+  color: #FBC79F;
+  background-color: #5f9ea6;
+}
+
+.btn.secondary {
+  color: #5f9ea6;
+  background-color: #FBC79F;
+}
+
 .primary {
   color: #5f9ea6;
 }
@@ -56,6 +74,13 @@ ul {
 }
 
 /**** Utility classes ****/
+.train {
+  padding: 2rem 5rem;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
 body {
   font-weight: 200;
   background-color: #FBC79F;
@@ -77,10 +102,7 @@ body main section#trains {
   padding: 3rem 0;
 }
 body main section#trains div.train {
-  padding: 2rem 5rem;
-  border-radius: 30px;
   margin-bottom: 1rem;
-  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -115,6 +137,9 @@ body main section#trains div.train div.info {
   padding-left: 2rem;
   border-left: 1px solid rgb(36, 118, 156);
 }
+body main section#trains div.train div.info p:last-of-type {
+  margin-bottom: 1rem;
+}
 body main div#pagination nav ul {
   padding: 0.7rem;
   font-weight: bold;
@@ -130,6 +155,12 @@ body main div#pagination nav ul li {
 }
 body main div#pagination nav ul li.active {
   color: #FBC79F;
+}
+body section#train-detail {
+  padding: 3rem 0;
+}
+body section#train-detail div.train {
+  margin-bottom: 2rem;
 }
 
 header,

@@ -25,9 +25,7 @@
 					<div class="info cell txt-smaller">
 						<p>Train n.{{ $train->train_code }}</p>
 						<p>{{ $train->wagons }} wagons</p>
-						<p>{{ ($train->is_onScheduled) ? 'On time' : 'Delay'}}</p>
-						<p class="text-secondary">{{ ($train->is_cancelled) ? 'Cancelled' : 'Confirmed'}}</p>
-						<a href="{{ route('trains-detail', $id = $train->id) }}">View More</a>
+						<a class="btn secondary" href="{{ route('trains-detail', $id = $train->id) }}">View More</a>
 					</div>				
 				</div>
 			@endforeach
